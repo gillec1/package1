@@ -1,7 +1,7 @@
 Package: package1
 Title: Package used to store a data file from the article titled "Women with temporomandibular disorders: Untargeted proton nuclear magnetic resonance spectroscopy-based metabolomics of saliva and psychological instruments dataset"
 Version: 0.0.0.9000
-Authors@R: person("Claire", "Gillespie"", "gillec1@mcmaster.ca", role = c("aut"))
+Authors@R: person("Claire", "Gillespie", "gillec1@mcmaster.ca", role = c("aut"))
 Description: Package will display data from the article titled above.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -9,3 +9,6 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 URL: https://github.com/gillec1/package1
 BugReports: https://github.com/gillec1/package1/issues
+Depends: 
+    R (>= 2.10)
+LazyData: true
