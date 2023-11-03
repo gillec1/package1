@@ -4,9 +4,9 @@
 \name{package1-package}
 \alias{package1}
 \alias{package1-package}
-\title{package1: Package used to store a data file from the article titled "Women with temporomandibular disorders: Untargeted proton nuclear magnetic resonance spectroscopy-based metabolomics of saliva and psychological instruments dataset"}
+\title{package1: Package used to store a data file titled energy and emissions}
 \description{
-Package will display data from the article titled above.
+Package will display data from the file titled above.
 }
 \seealso{
 Useful links:
@@ -14,6 +14,10 @@ Useful links:
   \item \url{https://github.com/gillec1/package1}
   \item Report bugs at \url{https://github.com/gillec1/package1/issues}
 }
+
+}
+\author{
+\strong{Maintainer}: Claire Gillespie \email{gillec1@mcmaster.ca}
 
 }
 \keyword{internal}

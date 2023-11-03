@@ -4,7 +4,6 @@
 ## usethis namespace: start
 ## usethis namespace: end
 NULL
-
 #' Energy and emissions data for world countries.
 #'
 #' A dataset containing information about 188 world countries, including
