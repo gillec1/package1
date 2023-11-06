@@ -1,0 +1,61 @@
+---
+title: "Process Energy and Emissions File"
+---
+
+I have an Excel file with data compiled from a few different sources about energy use and emissions for world countries.
+
+The name of the file is `Energy and Emissions.xlsx` and it contains two sheets, as follows:
+
+-   Energy_Emissions: the data
+-   Source: notes about the source and a data dictionary
+
+To make it easy to share this dataset I will read it, convert it to an `.RData` file, and then document it so that it can be bundled with package `packr`.
+
+Load the packages needed to preprocess the data:
+
+```{r}
+library(tidyverse)
+library(readxl)
+library(countrycode)
+```
+
+Read the Excel file as a dataframe:
+
+```{r}
+RAW_DATA_metabolomic_of_saliva <- read_excel("RAW DATA metabolomic of saliva.xlsx")
+```
+
+The dataframe consists of 188 observations of 10 variables. Get a summary of the dataframe:
+
+```{r}
+summary(RAW_DATA_metabolomic_of_saliva)
+```
+
+The names of the countries, the year for the population estimates, and the year for the energy estimates are character, so will change to factor:
+
+```{r}
+RAW_DATA_metabolomic_of_saliva <- RAW_DATA_metabolomic_of_saliva %>%
+  mutate(SAMPLES = factor(SAMPLES), GROUPS = factor(GROUPS))
+```
+
+New summary of the dataframe:
+
+```{r}
+summary(RAW_DATA_metabolomic_of_saliva)
+```
+
+The sources of these data are as follows:
+
+-   DMP Article
+(<https://www.sciencedirect.com/science/article/pii/S2352340920315560>) Accessed: November 6, 2023
+
+-   Excel file
+(<https://data.mendeley.com/datasets/wys5xd2vfg/1>) Accessed: November 6, 2023
+
+
+Save to data folder:
+
+```{r}
+usethis::use_data(RAW_DATA_metabolomic_of_saliva,
+                  overwrite = TRUE)
+```

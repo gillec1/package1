@@ -1,6 +1,6 @@
 Package: package1
-Title: Package used to store a data file titled energy and emissions
-Version: 0.0.1
+Title: Package used to display data from the DMP titled "Women with temporomandibular disorders: Untargeted proton nuclear magnetic resonance spectroscopy-based metabolomics of saliva and psychological instruments dataset"
+Version: 0.0.2
 Authors@R: 
     person(given = "Claire", family = "Gillespie", role = c("aut", "cre"), email = "gillec1@mcmaster.ca")
 Description: Package will display data from the file titled above.

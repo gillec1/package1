@@ -12,6 +12,7 @@ Package will display data from the file titled above.
 Useful links:
 \itemize{
   \item \url{https://github.com/gillec1/package1}
+  \item \url{https://gillec1.github.io/package1/}
   \item Report bugs at \url{https://github.com/gillec1/package1/issues}
 }
 
