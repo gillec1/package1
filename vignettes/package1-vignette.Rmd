@@ -14,6 +14,23 @@ knitr::opts_chunk$set(
 )
 ```
 
+```{r install-data-package, include=FALSE}
+if (!require("package1", character.only = TRUE)) {
+      remotes::install_github("gillec1/package1",
+                        build_vignettes = TRUE)
+  }
+```
+
 ```{r setup}
 library(package1)
 ```
+
+#Function multiplyr multiplies code a and code b
+
+The names of the samples are character, so will change to factor:
+
+```{r}
+RAW_DATA_metabolomic_of_saliva <- RAW_DATA_metabolomic_of_saliva %>%
+  mutate(SAMPLES = factor(SAMPLES), GROUPS = factor(GROUPS))
+```
+
