@@ -31,7 +31,7 @@ The dataframe consists of 188 observations of 10 variables. Get a summary of the
 summary(RAW_DATA_metabolomic_of_saliva)
 ```
 
-The names of the countries, the year for the population estimates, and the year for the energy estimates are character, so will change to factor:
+The names of the samples are character, so will change to factor:
 
 ```{r}
 RAW_DATA_metabolomic_of_saliva <- RAW_DATA_metabolomic_of_saliva %>%
@@ -43,6 +43,7 @@ New summary of the dataframe:
 ```{r}
 summary(RAW_DATA_metabolomic_of_saliva)
 ```
+
 
 The sources of these data are as follows:
 
