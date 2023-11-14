@@ -11,6 +11,8 @@ temporomandibular disorders: Untargeted proton nuclear magnetic
 resonance spectroscopy-based metabolomics of saliva and psychological
 instruments dataset”
 
+To obtain further information of the package, consult the vignette.
+
 ## Installation
 
 You can install the development version of package1 from

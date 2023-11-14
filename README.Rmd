@@ -20,6 +20,8 @@ knitr::opts_chunk$set(
 
 The goal of package1 is to display data from the DMP titled "Women with temporomandibular disorders: Untargeted proton nuclear magnetic resonance spectroscopy-based metabolomics of saliva and psychological instruments dataset"
 
+To obtain further information of the package, consult the vignette.
+
 ## Installation
 
 You can install the development version of package1 from [GitHub](https://github.com/) with:

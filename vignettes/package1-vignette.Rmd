@@ -25,12 +25,16 @@ if (!require("package1", character.only = TRUE)) {
 library(package1)
 ```
 
-#Function multiplyr multiplies code a and code b
-
-The names of the samples are character, so will change to factor:
-
-```{r}
-RAW_DATA_metabolomic_of_saliva <- RAW_DATA_metabolomic_of_saliva %>%
-  mutate(SAMPLES = factor(SAMPLES), GROUPS = factor(GROUPS))
-```
-
+#Defining the parameters within the excel file
+- Groups: 53 women total, aged 21 to 68 years
+  - Control = 27 healthy volunteers
+  - EG-pre = 26 women with muscular temporomandibular disorder (TMD), whose saliva was taken before undergoing            treatment. Treatment involved applying hot packs on the painful region for 20 mins, followed by performing            self-care exercises to restore muscle function, stretch muscles, and coordinate muscle movement.
+  - EG-post = 26 women with TMD, saliva collected post conservative treatment.
+  
+- Quantification of metabolites:
+  - The list of 56 metabolites were processed and quantified using an NMR software, where their concentrations were       measured. These metabolite profiles were exported to excel and normalized when required.
+  
+- Samples:
+  - The 79 samples were given specific IDs, all beginning with Amostra, followed by a capitalized letter for controls,     number beginning with zero for EG-pre, or number for EG-post.
+  
+#Using the data from the excel file, statistical tests were run wherein the metabolites of the various subgroups were compared to see if there are significant differences between the sub-groups for the different metabolites. Results suggested that the metabolomic profiles of women with and without TMD differ, with the EG-post group overlapping more with the control group than the EG-pre treatment. Metabolites of interest involved phenylacetate, dimethylamine, maltose, acetoin, and isovalerate, which are potential biomarkers for TMD of muscular origin.
